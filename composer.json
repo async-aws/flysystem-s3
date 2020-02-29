@@ -1,0 +1,35 @@
+{
+    "name": "async-aws/flysystem-s3",
+    "type": "library",
+    "description": "Flysystem S3 adapter",
+    "keywords": [
+        "aws",
+        "s3",
+        "Flysystem",
+        "Filesystem"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Nyholm",
+            "email": "tobias.nyholm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "async-aws/core": "^0.1 || ^0.2",
+        "async-aws/s3": "^0.1.0",
+        "league/flysystem": "^2.0@dev",
+        "league/mime-type-detection": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsyncAws\\Flysystem\\S3\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AsyncAws\\Flysystem\\S3\\Tests\\": "tests/"
+        }
+    }
+}
